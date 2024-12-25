@@ -8,8 +8,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Todo App",
-  description: "An example of Supabase, Auth and NextJS server actions",
+  title: "ToDo-List",
+  description: "424242",
 };
 
 export default function RootLayout({

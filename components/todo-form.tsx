@@ -18,11 +18,11 @@ function FormContent() {
         minLength={4}
         name="todo"
         required
-        placeholder="Add a new todo"
+        placeholder="добавь себе дел давай давай"
       />
       <Button type="submit" size="icon" className="min-w-10" disabled={pending}>
         <Send className="h-5 w-5" />
-        <span className="sr-only">Submit Todo</span>
+        <span className="sr-only">создать задачу</span>
       </Button>
     </>
   );

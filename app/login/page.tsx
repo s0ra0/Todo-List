@@ -32,26 +32,25 @@ export default async function Login({
     <section className="h-[calc(100vh-57px)] flex justify-center items-center">
       <Card className="mx-auto max-w-sm">
         <CardHeader>
-          <CardTitle className="text-2xl">Login</CardTitle>
+          <CardTitle className="text-2xl">логин</CardTitle>
           <CardDescription>
-            Enter your email below to login to your account
+            введи свою почту чтобы подтвердить вход
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
           <form id="login-form" className="grid gap-4">
             <div className="grid gap-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">почта</Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="m@example.com"
                 required
               />
             </div>
             <div className="grid gap-2">
               <div className="flex items-center">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">пароль</Label>
               </div>
               <Input
                 minLength={6}
@@ -67,14 +66,14 @@ export default async function Login({
               </div>
             )}
             <Button formAction={emailLogin} className="w-full">
-              Login
+              войти
             </Button>
           </form>
           <OAuthButtons />
           <div className="text-center text-sm">
-            Don&apos;t have an account?{" "}
+            нет аккаунта?{" "}
             <button formAction={signup} form="login-form" className="underline">
-              Sign up
+              ну зарегайся хз
             </button>
           </div>
         </CardContent>

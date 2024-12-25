@@ -58,7 +58,7 @@ export function TodoCard({
           size="icon"
         >
           <Trash2 className="h-5 w-5" />
-          <span className="sr-only">Delete Todo</span>
+          <span className="sr-only">удалить задачу</span>
         </Button>
       </CardContent>
     </Card>
